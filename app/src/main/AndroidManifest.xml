@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SIH">
         <activity
+            android:name=".FDashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".auth.FirmSignUpActivity"
             android:exported="false" />
         <activity
