@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".auth.SignupActivity">
+
+        <ImageView
+            android:id="@+id/ivUserpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/ivUserpic">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUserName"
+                style="@style/EditTextHint"
+                android:hint="UserName"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName"
+                android:maxLength="50" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_user_name"
+            android:layout_marginHorizontal="20dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                style="@style/EditTextHint"
+                android:hint="Password"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:maxLength="50" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tbtnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:textColor="@color/primary_light"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/input_password"
+            app:layout_constraintTop_toBottomOf="@id/input_password"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/tbtnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="LogIn"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_box_blue"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintTop_toBottomOf="@+id/tbtnReset"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/btnSignin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="I don't have account"
+            android:textColor="@color/primary_light"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/tbtnLogin"
+            app:layout_constraintStart_toStartOf="@+id/tbtnLogin"
+            app:layout_constraintTop_toBottomOf="@+id/tbtnLogin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#256CB3</color>
+    <color name="purple_500">#256CB3</color>
+    <color name="purple_700">#256CB3</color>
+    <color name="teal_200">#17A4D0</color>
+    <color name="teal_700">#17A4D0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="primary">#256CB3</color>
+    <color name="primary_light">#17A4D0</color>
+    <color name="color_gray">#707070</color>
+    <color name="color_gray_text">#7E7E7E</color>
+    <color name="gray_line">#EFEFF4</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_76">#767676</color>
+    <color name="gray_c8c7">#C8C7CC</color>
+    <color name="search_background">#DCDCDC</color>
+    <color name="color_overlay">#4B4B4B</color>
+    <color name="search_hint">#7F8084</color>
+    <color name="dark_blue_txt">#0E243B</color>
+    <color name="light_blue_txt">#17A4D0</color>
+    <color name="main_blue_theme">#256CB3</color>
+    <color name="grey_text">#7E7E7E</color>
+    <color name="grey_hint_text">#8A8A8F</color>
+    <color name="light_grey_divider">#EFEFF4</color>
+    <color name="dark_grey_divider">#666666</color>
+    <color name="gray_light_F9">#F9F9F9</color>
+    <color name="yellow_00">#FF9500</color>
+    <color name="black_03">#030303</color>
+    <color name="grey_dark_17">#171717</color>
+    <color name="red_dark_1B">#D0021B</color>
+    <color name="trans_light_d8">#D8D8D8</color>
+    <color name="gray_8c8c">#8C8C8C</color>
+    <color name="light_red">#ff2d55</color>
+</resources>

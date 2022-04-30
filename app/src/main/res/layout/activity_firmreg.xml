@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".auth.FirmRegActivity">
+
+        <ImageView
+            android:id="@+id/ivBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_black_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tvFDetails"
+            app:layout_constraintTop_toTopOf="@id/tvFDetails" />
+
+        <TextView
+            android:id="@+id/tvFDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:text="Firm Details"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivBackBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_125sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvFDetails">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFName"
+                style="@style/EditTextHint"
+                android:hint="Firm Name"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName"
+                android:maxLength="50" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputFid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/inputFName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFid"
+                style="@style/EditTextHint"
+                android:hint="Firm ID"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName"
+                android:maxLength="50" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputFAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/inputFid">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFAddress"
+                style="@style/EditTextHint"
+                android:hint="Firm Address"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName"
+                android:maxLength="50" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            app:layout_constraintTop_toTopOf="@id/inputFAddress"
+            app:layout_constraintBottom_toBottomOf="@id/inputFAddress"
+            app:layout_constraintEnd_toEndOf="@id/inputFAddress"/>
+        <TextView
+            android:id="@+id/tbtnFReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:text="Register"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_box_blue"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintTop_toBottomOf="@+id/inputFAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

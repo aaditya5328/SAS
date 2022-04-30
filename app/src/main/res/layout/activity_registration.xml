@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".auth.RegistrationActivity">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to E-Glance"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_25sdp"
+            android:paddingStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/_35sdp"
+            app:layout_constraintEnd_toEndOf="@+id/tvAppName"
+            app:layout_constraintStart_toStartOf="@+id/tvAppName"
+            app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+        <TextView
+            android:id="@+id/tbtnFLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_135sdp"
+            android:text="LogIn As Firm"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_box_blue"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tbtnELogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="LogIn As Employee"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_box_blue"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintTop_toBottomOf="@+id/tbtnFLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

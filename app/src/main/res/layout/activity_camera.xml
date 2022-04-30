@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CameraActivity">
+
+        <ImageView
+            android:id="@+id/ivFaceId"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_85sdp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/_180sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tBtnVerifyFace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:background="@drawable/bg_box_blue"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Tap to verify face"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivFaceId"
+            app:layout_constraintStart_toStartOf="@+id/ivFaceId"
+            app:layout_constraintTop_toBottomOf="@+id/ivFaceId" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
