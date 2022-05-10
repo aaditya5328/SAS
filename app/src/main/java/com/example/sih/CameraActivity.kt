@@ -37,7 +37,7 @@ class CameraActivity : AppCompatActivity() {
             Handler().postDelayed({
                 startActivity(Intent(this, DashboardActivity::class.java))
                 finish()
-            }, 1000)
+            }, 0)
         }
     }
 }
